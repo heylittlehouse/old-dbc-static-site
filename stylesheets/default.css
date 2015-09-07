@@ -28,22 +28,23 @@ body {
   max-height: 100%;
 }
 
-/* Arranges profile picture and sizes it */
-.profile-pic {
-  float: left;
-  width: 40%;
-  margin-right: 3em;
-}
-
-.main-text {
-  width: 800px;
-  height: 100px;
-}
-.front-page-text {
-  padding-top: 120px;
+.front-page-table {
   text-align: justify;
 }
 
+.front-page-table tr td {
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.profile-pic {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.teaser {
+  background-color: LightGray;
+}
 /* Makes links grow bigger and turn maroon when hovered over */
 
 a {
@@ -53,7 +54,7 @@ a {
 
 a:hover {
   color: #7C241E;
-  font-size: 115%;
+  font-weight: bold;
 }
 
 /* centers and arranges both nav and footer */
