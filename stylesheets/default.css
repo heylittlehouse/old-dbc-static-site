@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  background-color: white;
+}
+
+.body {
+  background-color: white;
+  padding: 2em;
+  border: 4px double;
+}
+
+.title {
+  text-align: center
+}
+
+.main-text {
+  width: 800px;
+  height: 100px
+}
+
+.profile-pic {
+  float: left;
+  width: 40%;
+  margin-right: 3em;
+}
+
+.text {
+  padding-top: 120px;
+}
+
+/* improve links */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #7C241E;
+  font-size: 125%;
+}
+
+/* works on both nav and footer */
+
+ul {
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin: 4em;
+}
+
+.teaser {
+  margin-top: 370px;
+}
