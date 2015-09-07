@@ -3,16 +3,18 @@ body {
   background-color: white;
 }
 
-.body {
+.page {
   background-color: white;
   padding: 2em;
   border: 4px double;
 }
 
+/* Corrects for too much margin below header background ocean image */
 .header {
   margin-bottom: -70px;
 }
 
+/* places title over the header background ocean image */
 .title {
   text-align: center;
   position: relative;
@@ -20,28 +22,29 @@ body {
   font-size: 2em;
 }
 
-
+/* fits ocean picture into section size */
 .header-background {
   max-width: 100%;
   max-height: 100%;
 }
 
-.main-text {
-  width: 800px;
-  height: 100px;
-}
-
+/* Arranges profile picture and sizes it */
 .profile-pic {
   float: left;
   width: 40%;
   margin-right: 3em;
 }
 
-.text {
+.main-text {
+  width: 800px;
+  height: 100px;
+}
+.front-page-text {
   padding-top: 120px;
+  text-align: justify;
 }
 
-/* improve links */
+/* Makes links grow bigger and turn maroon when hovered over */
 
 a {
   text-decoration: none;
@@ -50,10 +53,10 @@ a {
 
 a:hover {
   color: #7C241E;
-  font-size: 125%;
+  font-size: 115%;
 }
 
-/* works on both nav and footer */
+/* centers and arranges both nav and footer */
 
 ul {
   text-align: center;
@@ -65,7 +68,7 @@ li {
 }
 
 .teaser {
-  margin-top: 370px;
+  margin-top: 340px;
 }
 
 /* For blog/index.html. Centers blog post list titles */
