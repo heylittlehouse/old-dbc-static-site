@@ -9,9 +9,9 @@ body {
   border: 4px double;
 }
 
-/* Corrects for too much margin below header background ocean image */
+/* Corrects for too much margin around header background ocean image */
 .header {
-  margin-bottom: -70px;
+  margin: -25px -25px -90px;
 }
 
 /* places title over the header background ocean image */
