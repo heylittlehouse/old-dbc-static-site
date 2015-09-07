@@ -67,3 +67,10 @@ li {
 .teaser {
   margin-top: 370px;
 }
+
+/* For blog/index.html. Centers blog post list titles */
+
+.blog-list {
+  text-align: center;
+}
+
