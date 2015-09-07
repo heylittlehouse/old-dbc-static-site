@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <title>Here's my blog!</title>
+</head>
+
+<body>
+  <header>
+    <h1>Michael's Blog</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Pry into My Life</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="index.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h3>CSS Concepts</h3>
+    <p>Question: What is the difference between displaying html elements inline and displaying them in an inline-block?</p>
+
+    <p>If, for example, we are modifying some divs with inline, inline will make the divs show up in a row, next to each other, from left to right. The divs will follow the size of their contents and you cannot modify their width and height or modify top and bottom margins and padding (but you can modify left and right margins and padding). With inline block on the other hand, the divs will also appear in row next to each other, but you <em>can</em> set the div's width and height and modify top and bottom margins and padding as well. Inline-block therefore combines the aspects of inline element and block element, which would force a break after each block element. You can see the differences between the three in the picture below which I got from <a href="http://dustwell.com/div-span-inline-block.html">here.</a></p>
+    <img src="imgs/mGTYI.png">
+
+    <p>So if these were the only divs on the page, the CSS might look like this:</p>
+
+    <blockquote>div { <br>   background-color: red; <br>   border: 2px solid black; <br>   display: inline; (or display: inline-block, etc)<br>}</blockquote>
+  </section>
+
+  <footer>
+    <ul>
+      <li><a href="https://twitter.com/heylittlehouse">twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/michaelrlandon">linkedin</a></li>
+      <li><a href="https://github.com/heylittlehouse">GitHub</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
