@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <title>Here's my blog!</title>
+</head>
+
+<body>
+  <section class="page">
+  <header>
+    <section class="header">
+      <img class="header-background" src="../imgs/ocean-background.JPG">
+      <h1 class="title">Michael Landon: Web Developer</h1>
+    </section>
+  </header>
+  <hr>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="index.html">Blog</a></li>
+    </ul>
+  </nav>
+  <hr>
+
+  <h1>Enumerable Methods</h1>
+  <h2>#inject</h2>
+  <h4>21 September 2015</h4>
+
+  <section><p>I decided to write this post about #inject because I have used it twice in DBC so far and I still didn't feel like I quite understood what it does and what it's good for. But now after a little research I have a good grasp of its use.</p>
+    <p>#inject is great for a number of reasons, not least of which summing an array of numbers. I ran cross country in high school and how points are tallied are by summing the finishing place of each team's top 5 runners. Lowest points wins. We might use inject to find the total score for two teams and determine the winner. I will use data from the <a href="http://www.runnerspace.com/news.php?news_id=4504#d2b">2008 California division 2 state meet</a> which I participated in.</p>
+    <blockquote class="code"><p>mountain_view = [2,16,37,48,58]
+      redondo_union = [3,6,26,49,82]
+      mountain_view.inject(0){|sum, num| sum + num} # => 161
+      redondo_union.inject(0){|sum, num| sum + num} # => 166</p></blockquote>
+    <p>A narrow defeat! Redondo Union was ahead until their lowly 5th man (me) came across just a few seconds too late for a none too great 82nd place (hey, this is the state championships for the most populous state in the union, remember. To even be here you have to be pretty damn fast, rest assured my time was good). Just missed the podium!</p>
+    <p>As you can see, #inject takes in an argument and a block. The argument, in this case 0 is passed along to the "sum" variable, which it is set to. #inject then iterates through the array passed to it, each number represented by "num" and then the block adds num to sum. #inject then automatically returns the resulting sum.</p></section>
+  <hr>
+
+  <footer>
+    <ul>
+      <li><a href="https://twitter.com/heylittlehouse">twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/michaelrlandon">linkedin</a></li>
+      <li><a href="https://github.com/heylittlehouse">GitHub</a></li>
+    </ul>
+  </footer>
+</section>
+</body>
+</html>

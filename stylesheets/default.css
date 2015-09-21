@@ -32,7 +32,12 @@ body {
   text-align: justify;
 }
 
-.front-page-table tr td {
+#center {
+  width: 40%;
+  height: 100%;
+}
+
+.table-words {
   padding-right: 2em;
   padding-left: 2em;
 }
@@ -42,10 +47,10 @@ body {
   max-height: 100%;
 }
 
-.teaser {
+#teaser {
   background-color: LightGray;
 }
-/* Makes links grow bigger and turn maroon when hovered over */
+/* Makes links turn maroon when hovered over */
 
 a {
   text-decoration: none;
@@ -68,9 +73,6 @@ li {
   margin: 4em;
 }
 
-.teaser {
-  margin-top: 340px;
-}
 
 /* For blog/index.html. Centers blog post list titles */
 
