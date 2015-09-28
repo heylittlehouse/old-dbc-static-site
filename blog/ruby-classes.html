@@ -31,19 +31,19 @@
 
   <section><p>What are classes? What are instance variables? What are instance methods? These questions are all interrelated and compliment each other, so let's take each question one by one and we will see how they work. Here's a simple example from the DBC cirriculum:</p>
   <code>
-    class Die
-      def initialize(labels)
-        raise ArgumentError if labels.count == 0
-        @labels = labels
-      end
-
-      def sides
-        @labels.count
-      end
-
-      def roll
-        @labels[1 + rand(sides - 1)]
-      end
+    class Die <br>
+      def initialize(labels) <br>
+        raise ArgumentError if labels.count == 0 <br>
+        @labels = labels <br>
+      end <br>
+        <br>
+      def sides <br>
+        @labels.count <br>
+      end <br>
+        <br>
+      def roll  <br>
+        @labels[1 + rand(sides - 1)]  <br>
+      end  <br>
     end
   </code>
   <p>This code creates a class called Die. Basically, you will make a class when you need to describe some object you would like to represent.  When you call this object with Die.new(), you create an instance of that class. So until Die.new() is called, a class is merely a blueprint for a die, where a die to exist. Die.new() brings this object into existence and that particular existing die is called an 'instance' of Die.</p>
