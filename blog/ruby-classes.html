@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <title>Here's my blog!</title>
+</head>
+
+<body>
+  <section class="page">
+  <header>
+    <section class="header">
+      <img class="header-background" src="../imgs/ocean-background.JPG">
+      <h1 class="title">Michael Landon: Web Developer</h1>
+    </section>
+  </header>
+  <hr>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about-me.html">About Me</a></li>
+      <li><a href="mailto:michael.r.landon@gmail.com">Contact</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="index.html">Blog</a></li>
+    </ul>
+  </nav>
+  <hr>
+
+  <h1>Ruby Classes</h1>
+  <h2>Thinking about instance variables and methods</h2>
+  <h4>28 Sept 2015</h4>
+
+  <section><p>What are classes? What are instance variables? What are instance methods? These questions are all interrelated and compliment each other, so let's take each question one by one and we will see how they work. Here's a simple example from the DBC cirriculum:</p>
+  <code>
+    class Die
+      def initialize(labels)
+        raise ArgumentError if labels.count == 0
+        @labels = labels
+      end
+
+      def sides
+        @labels.count
+      end
+
+      def roll
+        @labels[1 + rand(sides - 1)]
+      end
+    end
+  </code>
+  <p>This code creates a class called Die. Basically, you will make a class when you need to describe some object you would like to represent.  When you call this object with Die.new(), you create an instance of that class. So until Die.new() is called, a class is merely a blueprint for a die, where a die to exist. Die.new() brings this object into existence and that particular existing die is called an 'instance' of Die.</p>
+  <p>In 'initialize' you will see @labels. @labels is an instance variable (denoted by the @), which means that it is a variable that has a particular value for the particular instance of this class. If you made a second instance of the same class and passed a different argument into Die.new() that instance variable would be different for the second instance. What the instance variable can also do is be accessed by all methods within that instance. Whereas a local variable in the #sides method (if there were one) could not be accessed in #roll, the instance variable @labels is accessed in every method.</p>
+  <p>An instance method is what #sides and #roll are. Think of them as an object instance's verb. Methods are what object instances do. Accordingly, one of the things a die does is roll and have a face up side, so in the code above, #roll calls and returns a random number between 1 and Sides (which is a created based on the argument passed at Die.new()).</p>
+  </section>
+  <hr>
+
+  <footer>
+    <ul>
+      <li><a href="https://twitter.com/heylittlehouse">twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/michaelrlandon">linkedin</a></li>
+      <li><a href="https://github.com/heylittlehouse">GitHub</a></li>
+    </ul>
+  </footer>
+</section>
+</body>
+</html>
