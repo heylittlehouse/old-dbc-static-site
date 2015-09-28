@@ -80,3 +80,7 @@ li {
   text-align: center;
 }
 
+iframe {
+  display: block;
+  margin: auto;
+}
