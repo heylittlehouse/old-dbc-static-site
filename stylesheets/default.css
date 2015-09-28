@@ -84,3 +84,8 @@ iframe {
   display: block;
   margin: auto;
 }
+
+.code {
+  background-color: LightGray;
+  padding-left: 10%
+}

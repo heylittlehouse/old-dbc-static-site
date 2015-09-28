@@ -30,7 +30,7 @@
   <h4>28 Sept 2015</h4>
 
   <section><p>What are classes? What are instance variables? What are instance methods? These questions are all interrelated and compliment each other, so let's take each question one by one and we will see how they work. Here's a simple example from the DBC cirriculum:</p>
-  <code>
+  <div class="code">
     class Die <br>
       def initialize(labels) <br>
         raise ArgumentError if labels.count == 0 <br>
@@ -45,7 +45,7 @@
         @labels[1 + rand(sides - 1)]  <br>
       end  <br>
     end
-  </code>
+  </div>
   <p>This code creates a class called Die. Basically, you will make a class when you need to describe some object you would like to represent.  When you call this object with Die.new(), you create an instance of that class. So until Die.new() is called, a class is merely a blueprint for a die, where a die to exist. Die.new() brings this object into existence and that particular existing die is called an 'instance' of Die.</p>
   <p>In 'initialize' you will see @labels. @labels is an instance variable (denoted by the @), which means that it is a variable that has a particular value for the particular instance of this class. If you made a second instance of the same class and passed a different argument into Die.new() that instance variable would be different for the second instance. What the instance variable can also do is be accessed by all methods within that instance. Whereas a local variable in the #sides method (if there were one) could not be accessed in #roll, the instance variable @labels is accessed in every method.</p>
   <p>An instance method is what #sides and #roll are. Think of them as an object instance's verb. Methods are what object instances do. Accordingly, one of the things a die does is roll and have a face up side, so in the code above, #roll calls and returns a random number between 1 and Sides (which is a created based on the argument passed at Die.new()).</p>
