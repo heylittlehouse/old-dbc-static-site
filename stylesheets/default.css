@@ -89,3 +89,7 @@ iframe {
   background-color: LightGray;
   padding-left: 10%
 }
+
+.project-list {
+  text-align: center;
+}
