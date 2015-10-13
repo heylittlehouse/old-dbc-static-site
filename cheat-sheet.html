@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet.css">
   <title>Here's my blog!</title>
 </head>
 
@@ -9,7 +9,7 @@
   <section class="page">
   <header>
     <section class="header">
-      <img class="header-background" src="../imgs/ocean-background.JPG">
+      <img class="header-background" src="imgs/ocean-background.JPG">
       <h1 class="title">Michael Landon: Web Developer</h1>
     </section>
   </header>
@@ -29,37 +29,38 @@
 
   <table class="cheat-sheet">
     <tr>
-      <td>Method</td>
-      <td>Comments</td>
+      <td class="table-header">Method</td>
+      <td class="table-header">Comments</td>
     </tr>
     <tr>
       <td>Ruby</td>
     </tr>
     <tr>
-      <td>.select{|x| block}</td>
-      <td>returns array of all elements for which block returns true</td>
+      <td class="code">.select{|x| block}</td>
+      <td>Returns array of all elements for which block returns true</td>
     </tr>
     <tr>
-      <td>.inject(0){|accumulator, iterator| block}</td>
+      <td class="code">.inject(0){|accumulator, iterator| block}</td>
       <td>Can be used to return the sum an array of numbers. 0 = default value of accumulator (or total sum).</td>
     </tr>
     <tr>
-      <td>.delete_if{|x| block}</td>
+      <td class="code">.delete_if{|x| block}</td>
       <td>Deletes something in an array or hash if the block returns true</td>
     </tr>
     <tr>
       <td>Javascript</td>
     </tr>
     <tr>
-      <td>.splice(index, replace, add)</td>
+      <td class="code">.splice(index, replace, add)</td>
       <td>Lets you insert, delete, or exchange elements in array at an index</td>
     </tr>
     <tr>
-      <td>function myObject(){this.iAm = "A constructor function"}</td>
-      <td>an object that needs to be instantiated(new myObject();)</td>
+      <td class="code">function myObject(){this.iAm = "A constructor function"}</td>
+      <td>An object that needs to be instantiated(new myObject();)</td>
     </tr>
   </table>
 
+  <hr>
   <footer>
     <ul>
       <li><a href="https://twitter.com/heylittlehouse">twitter</a></li>
